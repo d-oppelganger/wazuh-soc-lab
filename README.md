@@ -19,6 +19,12 @@ O Wazuh detectou o padrão de falhas imediatamente. Como mostra o dashboard abai
 
 ![Dashboard Wazuh](wazuh_dashboard_alert.png)
 
+## 🔧 Desafios de Implementação
+Configurar um SIEM envolve garantir que o Agente e o Servidor consigam se falar através da rede.
+
+* **O Problema:** Garantir a comunicação entre o Kali Linux (Agente) e o Wazuh Server em um ambiente virtualizado.
+* **A Solução:** Configurei a rede das máquinas virtuais em modo **Bridge** para garantir que ambas recebessem IPs válidos na mesma sub-rede, permitindo o envio de logs na porta 1514/TCP.
+
 ## 🧠 Aprendizado
 Este projeto me permitiu entender na prática como funciona a rotina de um **Analista de SOC**: não basta apenas ter logs, é preciso ter uma ferramenta que correleciona esses dados e gera visualizações úteis para tomada de decisão.
 
